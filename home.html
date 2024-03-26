@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>LFA GPA Calculator</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+    overflow: hidden;
+    background-color: #a86603;
+    }
+
+    .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+
+    .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+
+    .topnav a.active {
+    background-color: #d40202;
+    color: white;
+    }
+
+    
+    body {
+        background-color: #FEF1E4
+
+        /* background-size: cover; */
+    }
+      
+</style>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a href="home.html" id="homeLink" class="active">Home</a>
+        <a href="calculator.html" id="calculatorLink">Calculator</a>
+        <a href="qa.html" id="qaLink">QA</a>
+        <a href="about.html" id="aboutLink">About</a>
+      </div>
+
+<style> h1{text-align: center;} p{text-align: center;} </style>
+
+<font size="6">
+<h1 style="font-family: Impact">Welcome to the LFA GPA Calculator</h1>
+</font>
+
+<p>&nbsp;</p>
+
+<p style="font-family: Georgia">
+<font size="7">
+This calculator will take in 6 classes and will output the GPA based on the LFA Grading Scale. Please enter only valid inputs such as A, B+, etc. 
+</font>
+</p>
+<p>&nbsp;</p>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const homeLink = document.getElementById('homeLink');
+    const calculatorLink = document.getElementById('calculatorLink');
+    const qaLink = document.getElementById('qaLink');
+    const aboutLink = document.getElementById('aboutLink');
+
+    homeLink.addEventListener('click', function(event) {
+      calculatorLink.classList.remove('active');
+      qaLink.classList.remove('active');
+      aboutLink.classList.remove('active');
+    });
+
+    calculatorLink.addEventListener('click', function(event) {
+      homeLink.classList.remove('active');
+      qaLink.classList.remove('active');
+      aboutLink.classList.remove('active');
+    });
+
+    qaLink.addEventListener('click', function(event) {
+      homeLink.classList.remove('active');
+      calculatorLink.classList.remove('active');
+      aboutLink.classList.remove('active');
+    });
+
+    aboutLink.addEventListener('click', function(event) {
+      homeLink.classList.remove('active');
+      calculatorLink.classList.remove('active');
+      qaLink.classList.remove('active');
+    });
+  });
+</script>
+
+
+</body>
+</html> 
+
